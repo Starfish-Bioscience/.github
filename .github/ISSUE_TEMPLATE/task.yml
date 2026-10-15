@@ -1,0 +1,35 @@
+name: Task
+description: A piece of work to carry out, including a run, a reanalysis or an import.
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: "Title: the task and its object in one sentence (e.g. 'Rerun coverage on campaign X with release 1.2.0')."
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What the task produces and why.
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Inputs and versions
+      description: Data, parameters, pipeline or package versions, resources needed.
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or procedure
+      render: shell
+  - type: textarea
+    id: done
+    attributes:
+      label: Expected outputs and checks
+      description: Where results go and how they are verified.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links

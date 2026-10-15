@@ -1,0 +1,38 @@
+name: Bug
+description: Something produces a wrong result, fails, or behaves unexpectedly.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: "One issue = one problem. Title: the problem in one sentence, no prefix."
+  - type: textarea
+    id: observed
+    attributes:
+      label: What was observed
+      description: Date, exact versions (package, pipeline, database, tag) and what was measured.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Why it matters
+      description: Impact on results, users or downstream work.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Minimal command or reprex that shows the problem.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Related issues (use owner/repo#N outside this repository), logs, reports.

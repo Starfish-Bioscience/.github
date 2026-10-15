@@ -1,0 +1,32 @@
+name: Feature
+description: A new capability or an improvement.
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: "Title: the expected outcome in one sentence, no prefix."
+  - type: textarea
+    id: need
+    attributes:
+      label: Need
+      description: What should become possible, and for whom.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Leads
+      description: Possible approaches, as checkboxes. They are suggestions, not a specification.
+      value: |
+        - [ ] 
+  - type: textarea
+    id: done
+    attributes:
+      label: How we will know it is done
+      description: Observable criterion or command that verifies the result.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
