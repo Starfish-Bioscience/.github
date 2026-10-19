@@ -1,0 +1,58 @@
+name: Run
+description: Running or re-running a pipeline on a dataset.
+type: Run
+projects: ["Starfish-Bioscience/6"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One issue = one significant processing, not each pipeline step or resume attempt.
+        This issue documents the run; it never authorises running it by itself.
+        Only what is known before the run is required; complete the rest afterwards.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What the run produces and why.
+    validations:
+      required: true
+  - type: textarea
+    id: pipeline
+    attributes:
+      label: Pipeline and version
+      description: Repository and release tag or commit.
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Input data
+      description: Dataset, samples, location.
+    validations:
+      required: true
+  - type: textarea
+    id: parameters
+    attributes:
+      label: Parameters and profile
+      description: Profile, parameter file, non-default options.
+      render: yaml
+  - type: textarea
+    id: environment
+    attributes:
+      label: Execution environment
+      description: Machine, executor, container images.
+  - type: textarea
+    id: results
+    attributes:
+      label: Results location
+      description: Where the outputs are, once the run has finished.
+  - type: textarea
+    id: qc
+    attributes:
+      label: QC validation
+      description: Checks performed on the outputs and their verdict, once the run has finished.
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Related issues, reports, logs.

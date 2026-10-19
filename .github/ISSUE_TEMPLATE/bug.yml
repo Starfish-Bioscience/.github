@@ -1,6 +1,7 @@
 name: Bug
 description: Something produces a wrong result, fails, or behaves unexpectedly.
 type: Bug
+projects: ["Starfish-Bioscience/6"]
 body:
   - type: markdown
     attributes:
