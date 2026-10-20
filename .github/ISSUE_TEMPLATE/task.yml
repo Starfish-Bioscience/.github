@@ -1,10 +1,11 @@
 name: Task
-description: A piece of work to carry out, including a run, a reanalysis or an import.
+description: A piece of work to carry out — maintenance, documentation, a one-off task.
 type: Task
+projects: ["Starfish-Bioscience/6"]
 body:
   - type: markdown
     attributes:
-      value: "Title: the task and its object in one sentence (e.g. 'Rerun coverage on campaign X with release 1.2.0')."
+      value: "Title: the task and its object in one sentence (e.g. 'Update the installation guide for release 1.2.0')."
   - type: textarea
     id: goal
     attributes:

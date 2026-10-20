@@ -1,6 +1,7 @@
 name: Feature
 description: A new capability or an improvement.
 type: Feature
+projects: ["Starfish-Bioscience/6"]
 body:
   - type: markdown
     attributes:
